@@ -20,6 +20,17 @@ class OrderRequest extends BaseOrder
         $this->requireCar = $requireCar;
         return $this;
     }
+    
+    /**
+     * @param bool $isSend
+     *
+     * @return self
+     */
+    public function setRecipientsSmsNotification(bool $isSend): self
+    {
+        $this->recipientsSmsNotification = $isSend;
+        return $this;
+    }
 
     /**
      * @param string $matter
