@@ -45,6 +45,11 @@ abstract class BaseOrder extends AbstractModel
      * @var string Shipment description
      */
     protected $matter;
+    
+    /**
+     * @var bool Send sms to recipients of the arrival interval and telephone courier
+     */
+    protected $recipientsSmsNotification;
 
     /**
      * @var int Insurance size
